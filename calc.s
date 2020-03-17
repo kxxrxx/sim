@@ -50,7 +50,7 @@ GET_LARGER						; subroutine GET_LARGER
 		MOVLT R0, R2				; if NUM1<NUM2, copy NUM2 to R0 (when Z or [N != V])
 		LDR R3, =LARGER				; R3=&LARGER, R3 points to LARGER
 		STR R0, [R3]				; store value in R0 to the content of R3 (LARGER)
-		BX LR						; branches to address given by LR and switches instruction set (ARM/Thumb)
+		BX LR					; branches to address given by LR and switches instruction set (ARM/Thumb)
 		
 		
 		
